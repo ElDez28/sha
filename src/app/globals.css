@@ -21,3 +21,12 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+
+.header::before {
+  content: "━ ";
+  color: #c9ada7;
+}
+.header::after {
+  content: " ━";
+  color: #c9ada7;
+}

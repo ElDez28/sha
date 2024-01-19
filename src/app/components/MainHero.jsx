@@ -2,12 +2,11 @@
 
 import { motion } from "framer-motion";
 import HeroSection from "./HeroSection";
+import Sha from "./Sha";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-import tea from "/public/heroImages/tea.webp";
-import candle from "/public/heroImages/candle.webp";
+import mountain from "/public/heroImages/mountain.webp";
 import butterfly from "/public/heroImages/butterfly.webp";
 import flower from "/public/heroImages/flower.webp";
 import flower_2 from "/public/heroImages/flower_2.webp";
@@ -152,6 +151,7 @@ const MainHero = (props) => {
           swipeable
           transitionDuration={0}
         >
+          <SlideItem image={mountain} alt={"mountain"}></SlideItem>
           <SlideItem image={cat} alt={"cat"}></SlideItem>
           <SlideItem image={flower} alt={"flower"}></SlideItem>
           <SlideItem image={flower_2} alt={"flower_2"}></SlideItem>
@@ -160,6 +160,7 @@ const MainHero = (props) => {
       </div>
 
       <div className="hero relative h-screen overflow-hidden md:h-full bg-gray-700 w-full bg-opacity-60">
+        <Sha></Sha>
         <div className="mx-auto flex h-full max-w-[96rem] items-center justify-between gap-4 px-6">
           <div className="order-last mt-20 flex h-full flex-1 flex-col items-center justify-center px-4 text-center text-white xl:order-first">
             <motion.div

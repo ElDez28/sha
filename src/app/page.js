@@ -3,7 +3,10 @@
 import MainHero from "./components/MainHero";
 import { useRef } from "react";
 import Navbar from "./components/Navbar";
-import Sha from "./components/Sha";
+import Transformation from "./components/Transformation";
+import Difference from "./components/Difference";
+import Achtung from "./components/Achtung";
+import ContactUs from "./components/ContactUs";
 // import Journey from "../../components/Journey";
 // import Experience from "../../components/Experience";
 // import Services from "../../components/Services";
@@ -28,7 +31,10 @@ export default function Home() {
         <Navbar></Navbar>
         <MainHero page="home" onClick={handleClick}></MainHero>
       </div>
-      <Sha></Sha>
+      <Transformation ref={sectionRef}></Transformation>
+      <Difference></Difference>
+      <Achtung></Achtung>
+      <ContactUs></ContactUs>
       {/* <Journey ref={sectionRef} t={homeT}></Journey>
       <Experience t={homeT}></Experience>
       <Services locale={props.locale} t={homeT}></Services>
