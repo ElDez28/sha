@@ -8,7 +8,7 @@ import emailSchema from "@/schemas/emailSchema";
 import { sendContactForm } from "../lib/sendEmail";
 import { useRouter } from "next/navigation";
 import { paragraphFontSize } from "../lib/fontSizes";
-import ErrorPopUp from "./ErrorPopup";
+import ErrorPopUp from "./ErrorPopUp";
 import Image from "next/image";
 import contact from "/public/contact.svg";
 
