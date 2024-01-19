@@ -9,7 +9,7 @@ import { sendContactForm } from "../lib/sendEmail";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 import { paragraphFontSize } from "../lib/fontSizes";
-const DynamicErrorPopUp = dynamic(() => import("./ErrorPopUp"));
+// const DynamicErrorPopUp = dynamic(() => import("./ErrorPopUp"));
 import Image from "next/image";
 import contact from "/public/contact.svg";
 
@@ -99,7 +99,7 @@ const ContactUs = ({ t, con }) => {
 
   return (
     <section className={`relative flex-1  bg-[#edf2f5] py-24`}>
-      {open && (
+      {/* {open && (
         <DynamicErrorPopUp
           open={open}
           handleClose={() => setOpen(false)}
@@ -111,7 +111,7 @@ const ContactUs = ({ t, con }) => {
               : "There was an error sending an email!"
           }
         ></DynamicErrorPopUp>
-      )}
+      )} */}
 
       <motion.div
         variants={variants}
