@@ -7,8 +7,9 @@ import { useFormik } from "formik";
 import emailSchema from "@/schemas/emailSchema";
 import { sendContactForm } from "../lib/sendEmail";
 import { useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
 import { paragraphFontSize } from "../lib/fontSizes";
-import ErrorPopUp from "./ErrorPopUp";
+const DynamicErrorPopUp = dynamic(() => import("./ErrorPopUp"));
 import Image from "next/image";
 import contact from "/public/contact.svg";
 
@@ -99,7 +100,7 @@ const ContactUs = ({ t, con }) => {
   return (
     <section className={`relative flex-1  bg-[#edf2f5] py-24`}>
       {open && (
-        <ErrorPopUp
+        <DynamicErrorPopUp
           open={open}
           handleClose={() => setOpen(false)}
           content={
@@ -109,7 +110,7 @@ const ContactUs = ({ t, con }) => {
               ? error?.response?.data?.message
               : "There was an error sending an email!"
           }
-        ></ErrorPopUp>
+        ></DynamicErrorPopUp>
       )}
 
       <motion.div
