@@ -73,50 +73,8 @@ const ContactUs = ({ t, con }) => {
     }
   }, [success]);
 
-  const initialValues = {
-    name: "",
-    email: "",
-    subject: "",
-    text: "",
-  };
-
-  const sendEmail = async (e) => {
-    try {
-      await sendContactForm({
-        ...formik.values,
-        page,
-      });
-      setSuccess(true);
-      formik.resetForm();
-    } catch (err) {
-      setError(err);
-    }
-  };
-  const formik = useFormik({
-    enableReinitialize: true,
-    validateOnChange: false,
-    validateOnBlur: validate,
-    initialValues,
-    validationSchema: emailSchema,
-    onSubmit: sendEmail,
-  });
-
   return (
     <section className={`relative flex-1  bg-[#edf2f5] py-24`}>
-      {open && (
-        <DynamicErrorPopUp
-          open={open}
-          handleClose={() => setOpen(false)}
-          content={
-            error?.response?.status === 429
-              ? error?.response?.data
-              : error?.response?.data?.message
-              ? error?.response?.data?.message
-              : "There was an error sending an email!"
-          }
-        ></DynamicErrorPopUp>
-      )}
-
       <motion.div
         variants={variants}
         initial="hidden"
