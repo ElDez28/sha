@@ -1,14 +1,5 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Header from "./Header";
 import { motion } from "framer-motion";
-import { useFormik } from "formik";
-import emailSchema from "@/schemas/emailSchema";
-import { sendContactForm } from "../lib/sendEmail";
-import { useRouter } from "next/navigation";
-import dynamic from "next/dynamic";
-import { paragraphFontSize } from "../lib/fontSizes";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
@@ -37,43 +28,12 @@ const variants = {
   },
 };
 
-const ContactUs = ({ t, con }) => {
-  const [error, setError] = useState(null);
-  const [open, setOpen] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [validate, setValidate] = useState(false);
-  const router = useRouter();
-  const page =
-    router.pathname === "/"
-      ? "Home Page"
-      : router.pathname === "/privacy_and_policy"
-      ? "Privacy and Policy Page"
-      : router.pathname === "/terms_and_conditions"
-      ? "Terms and Conditions Page"
-      : router.pathname === "/legal_notice"
-      ? "Legal Notice page"
-      : router.pathname === "/about"
-      ? "About Page"
-      : "";
-  useEffect(() => {
-    if (error) {
-      setOpen(true);
-    }
-  }, [error]);
-  useEffect(() => {
-    if (success) {
-      const timeout = setTimeout(() => {
-        setSuccess(false);
-      }, 5000);
-
-      () => {
-        clearTimeout(timeout);
-      };
-    }
-  }, [success]);
-
+const ContactUs = ({ con }) => {
   return (
-    <section className={`relative flex-1  bg-[#edf2f5] py-24`}>
+    <section
+      id="contact_us"
+      className={`relative flex-1 scroll-m-24 bg-[#edf2f5] py-24`}
+    >
       <motion.div
         variants={variants}
         initial="hidden"

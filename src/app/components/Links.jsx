@@ -5,8 +5,9 @@ import { HiHome } from "react-icons/hi";
 import { MdPrivacyTip } from "react-icons/md";
 import { GiInjustice } from "react-icons/gi";
 import { GiStabbedNote } from "react-icons/gi";
+import logo from "/public/logo.png";
 
-const Links = ({ t }) => {
+const Links = () => {
   const url = `${process.env.NEXT_PUBLIC_SITE_URL}/`;
   return (
     <section className="h-auto bg-dark pt-16 ">
@@ -14,13 +15,12 @@ const Links = ({ t }) => {
         <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2 lg:grid-cols-4 ">
           <div className="text-md flex flex-col gap-2 text-left text-gray-200 lg:col-span-2">
             <div>
-              {/* <Image
-                className="h-[40px] w-[140px]"
+              <Image
+                className="w-[16rem] h-[16rem]"
                 src={logo}
-                alt="tech towers logo"
-              ></Image> */}
+                alt="sha logo"
+              ></Image>
             </div>
-            <p className={`text-sm`}>{"Footer"}</p>
           </div>
           <div className="flex w-full flex-1 flex-col gap-2 text-gray-200">
             <h2 className={` pb-2 ${miniTitleFs}  text-left`}>
@@ -68,37 +68,29 @@ const Links = ({ t }) => {
               </h2>
 
               <p>
-                <span className="font-semibold">Tech Towers </span>
-                d.o.o Prijedor
+                <span className="font-semibold">
+                  SHA Mental Therapie & mehr{" "}
+                </span>
               </p>
-              <span>Petrovo b.b</span>
+              <span>Tempelhofer Damm 36</span>
               <p>
-                <span className="font-semibold">79102 </span>
-                Prijedor
+                <span className="font-semibold">12101 </span>
+                Berlin
               </p>
-              <span className="font-bold">Bosnia and Herzegovina</span>
-              <p className="">
-                <span className="font-bold">{"phone"}:</span>{" "}
-                <a
-                  className="py-6 text-hcolor hover:text-lightblue md:p-0"
-                  href={`tel:${+38766994466}`}
-                >
-                  +38766994466
-                </a>
-              </p>
+              <span className="font-bold">Deutschland</span>
               <p className="">
                 <span className="font-bold">{"phone"}:</span>{" "}
                 <a
                   className="py-6 text-hcolor hover:text-lightblue md:p-0 md:py-0"
-                  href={`tel:${+4917680190786}`}
+                  href={`tel:${+49017676649854}`}
                 >
-                  +4917680190786
+                  +49 0176 766 49 854
                 </a>
               </p>
               <p>
                 <span className="font-bold">{"email"}: </span>
-                <a className="py-6 md:py-0" href={`mailto:info@techtowers.com`}>
-                  info@tech-towers.net
+                <a className="py-6 md:py-0" href={`mailto:shahda@hotmail.de`}>
+                  shahda@hotmail.de
                 </a>
               </p>
             </div>
@@ -106,7 +98,8 @@ const Links = ({ t }) => {
         </div>
       </div>
       <div className={`bg-dark px-4 py-6 text-center text-gray-200 ${linksFs}`}>
-        <span>© {"copyright"}</span>
+        <span>© {"copyright "}</span>
+        <span>SHA 2024. All rights reserved</span>
       </div>
     </section>
   );

@@ -31,10 +31,10 @@ module.exports = {
         black: "900",
       },
       colors: {
-        primary: "#c9ada7",
-        hcolor: "#3498db",
+        primary: "#1e749e",
+        hcolor: "#c9c3c1",
         lightblue: "		#92a4ba",
-        dark: "#796864",
+        dark: "#063045",
         beige: "#faedcd",
       },
       keyframes: {

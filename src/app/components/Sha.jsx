@@ -2,7 +2,7 @@ const ShaItem = ({ letter, rest }) => {
   return (
     <div>
       <p className="flex flex-col items-center">
-        <span className="text:md md:text-6xl font-bold text-primary">
+        <span className="text:md md:text-6xl font-bold text-hcolor">
           {letter}
         </span>
         {rest.split("").map((l, i) => {

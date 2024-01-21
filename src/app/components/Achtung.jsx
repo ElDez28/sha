@@ -2,8 +2,6 @@ import React from "react";
 import Wrapper from "./Wrapper";
 import Header from "./Header";
 import { CiWarning } from "react-icons/ci";
-import WhatsAppWidget from "react-whatsapp-chat-widget";
-import "react-whatsapp-chat-widget/index.css";
 
 const Achtung = () => {
   return (
@@ -22,19 +20,6 @@ const Achtung = () => {
           Katzenallergie leidest, ist Letztere Option ausgeschlossen.
         </p>
       </div>
-      <WhatsAppWidget
-        phoneNo="017676649854" // Replace with your WhatsApp number
-        messageBoxTxt={true}
-        placeholder="Type a message.."
-        chatMessage={
-          <>
-            Hallo 👋 <br />
-            <br /> Wie kann ich Ihnen helfen?
-          </>
-        }
-        headerTitle="Kundensupport"
-        btnTxt="Chat starten"
-      />
     </Wrapper>
   );
 };

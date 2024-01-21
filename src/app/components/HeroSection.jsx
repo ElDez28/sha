@@ -27,7 +27,7 @@ const HeroSection = (props) => {
       }`}
     >
       <div className="absolute left-0 top-0 -z-30 h-full w-full flex items-center justify-center">
-        {/* <Image
+        <Image
           priority
           alt="Tech background"
           onLoad={onLoad}
@@ -44,17 +44,17 @@ const HeroSection = (props) => {
             state[props.page] ? "" : "opacity-0"
           }`}
           src={props.bgMobile}
-        ></Image> */}
+        ></Image>
       </div>
       <div className="absolute left-0 top-0 -z-10 h-full w-full">
-        {/* <Image
+        <Image
           priority
           alt="Blurry background"
           className={`duration-600 h-full w-full object-cover transition-all ${
             state[props.page] ? "opacity-0" : ""
           }`}
           src={props.bg2}
-        ></Image> */}
+        ></Image>
       </div>
       <div
         className={`duration-600 absolute left-0  top-0 -z-10 h-full w-full backdrop-blur-xl transition-all ${
@@ -63,7 +63,7 @@ const HeroSection = (props) => {
       ></div>
 
       <div
-        className={`duration-600 h-full w-full transition-all ${
+        className={`duration-600 h-full w-full transition-all bg-primary ${
           state[props.page] ? "opacity-80" : ""
         } absolute top-0 -z-20`}
       ></div>

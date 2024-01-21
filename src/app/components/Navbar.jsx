@@ -6,9 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 const DynamicModal = dynamic(() => import("./Modal"), { ssr: false });
-// import logo from "../../public/logo/resized-logo-black-copy.webp";
-// import logo2 from "../../public/logo/resized-logo-whitea-copy.webp";
-// import logo3 from "../../public/logo/tech_towers_logo3.webp";
+import logo from "/public/sha_logo.png";
 import { useInView } from "react-intersection-observer";
 
 const Navbar = () => {
@@ -45,17 +43,12 @@ const Navbar = () => {
       >
         <div className="mx-auto flex max-w-[90rem] items-center justify-between px-4 pb-1 pt-2 font-bold lg:px-8 ">
           <Link href="/" className={`-translate-y-1`}>
-            {/* <Image
-              className={`hidden w-48 object-contain lg:inline-block`}
-              // src={bg === "white" ? logo : logo2}
-              alt="logo with text"
-            ></Image> */}
-            {/* <Image
+            <Image
               priority
-              className="h-12 w-12 object-contain  lg:hidden"
-              src={logo3}
+              className="h-12 w-12 object-contain"
+              src={logo}
               alt="logo without text"
-            ></Image> */}
+            ></Image>
           </Link>
           <div
             className={` hidden  items-center gap-8  py-3 text-base font-semibold lg:flex   text-${
@@ -68,20 +61,17 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="group relative flex items-center justify-center gap-1 whitespace-nowrap">
-              <Link className="z-20" href={`${url}/about`}>
-                {"About Us"}
+              <Link className="z-20" href={`${url}/legal_notice`}>
+                {"Legal"}
               </Link>
             </div>
             <div className="group relative flex items-center justify-center gap-1 ">
-              <Link className="z-20" href={`${url}/services`}>
-                {"Services"}
+              <Link className="z-20" href={`${url}/privacy_and_policy`}>
+                {"Privacy Policy"}
               </Link>
             </div>
-            <div className="flex items-center justify-center gap-1">
-              <Link href={`${url}/careers`}> {"Careers"}</Link>
-            </div>
             <div className="flex items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 py-2 font-semibold  text-white">
-              <Link href={`${url}/contact_us`}> {"Contact Us"}</Link>
+              <Link href={`${url}/#contact_us`}> {"Contact Us"}</Link>
             </div>
           </div>
           {!isOpen && (
