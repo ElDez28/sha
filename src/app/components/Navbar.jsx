@@ -11,7 +11,6 @@ import { useInView } from "react-intersection-observer";
 
 const Navbar = () => {
   const [bg, setBg] = useState("transparent");
-  const url = process.env.NEXT_PUBLIC_SITE_URL;
   const [isOpen, setIsOpen] = useState(false);
   const closeModal = useCallback(() => {
     setIsOpen(false);
@@ -56,22 +55,22 @@ const Navbar = () => {
             }`}
           >
             <div className="group relative flex items-center justify-center gap-1 whitespace-nowrap">
-              <Link className="z-20" href={`${url}`}>
+              <Link className="z-20" href={`/`}>
                 {"Home"}
               </Link>
             </div>
             <div className="group relative flex items-center justify-center gap-1 whitespace-nowrap">
-              <Link className="z-20" href={`${url}/legal_notice`}>
+              <Link className="z-20" href={`/legal_notice`}>
                 {"Legal"}
               </Link>
             </div>
             <div className="group relative flex items-center justify-center gap-1 ">
-              <Link className="z-20" href={`${url}/privacy_and_policy`}>
+              <Link className="z-20" href={`/privacy_and_policy`}>
                 {"Privacy Policy"}
               </Link>
             </div>
             <div className="flex items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 py-2 font-semibold  text-white">
-              <Link href={`${url}/#contact_us`}> {"Contact Us"}</Link>
+              <Link href={`#contact_us`}> {"Contact Us"}</Link>
             </div>
           </div>
           {!isOpen && (
