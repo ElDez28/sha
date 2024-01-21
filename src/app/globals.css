@@ -30,3 +30,10 @@ body {
   content: " ━";
   color: #c9ada7;
 }
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}

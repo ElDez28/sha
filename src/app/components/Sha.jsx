@@ -22,7 +22,7 @@ const ShaItem = ({ letter, rest }) => {
 
 const Sha = () => {
   return (
-    <div className="flex flex-col justify-center py-5 gap-10 absolute top-40 left-10 ">
+    <div className="flex-col justify-center py-5 gap-10 absolute top-1/2 transform -translate-y-1/2 left-10 hidden lg:flex ">
       <ShaItem letter={"S"} rest={"EIT"}></ShaItem>
       <ShaItem letter={"H"} rest={"EUTE"}></ShaItem>
       <ShaItem letter={"A"} rest={"NDERS"}></ShaItem>

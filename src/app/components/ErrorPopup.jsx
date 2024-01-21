@@ -17,7 +17,7 @@ const variants = {
   },
 };
 
-const ErrorPopUp = ({ open, handleClose, content }) => {
+export default function ErrorPopUp({ open, handleClose, content }) {
   useEffect(() => {
     const closeOnEscapeKey = (e) => {
       e.key === "Escape" ? handleClose() : null;
@@ -68,6 +68,4 @@ const ErrorPopUp = ({ open, handleClose, content }) => {
       </motion.div>
     </ReactPortal>
   );
-};
-
-export default ErrorPopUp;
+}

@@ -7,6 +7,7 @@ import Transformation from "./components/Transformation";
 import Difference from "./components/Difference";
 import Achtung from "./components/Achtung";
 import ContactUs from "./components/ContactUs";
+import Links from "./components/Links";
 // import Journey from "../../components/Journey";
 // import Experience from "../../components/Experience";
 // import Services from "../../components/Services";
@@ -35,6 +36,7 @@ export default function Home() {
       <Difference></Difference>
       <Achtung></Achtung>
       <ContactUs></ContactUs>
+      <Links></Links>
       {/* <Journey ref={sectionRef} t={homeT}></Journey>
       <Experience t={homeT}></Experience>
       <Services locale={props.locale} t={homeT}></Services>

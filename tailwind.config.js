@@ -34,7 +34,7 @@ module.exports = {
         primary: "#c9ada7",
         hcolor: "#3498db",
         lightblue: "		#92a4ba",
-        darkblue: "#041327",
+        dark: "#796864",
         beige: "#faedcd",
       },
       keyframes: {
