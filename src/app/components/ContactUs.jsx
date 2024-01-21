@@ -13,7 +13,6 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiPhoneIncoming } from "react-icons/fi";
-const DynamicErrorPopUp = dynamic(() => import("./ErrorPopUp"));
 import Image from "next/image";
 import contact from "/public/contact.svg";
 
