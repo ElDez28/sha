@@ -28,8 +28,7 @@ const HeroSection = (props) => {
     >
       <div className="absolute left-0 top-0 -z-30 h-full w-full flex items-center justify-center">
         <Image
-          priority
-          alt="Tech background"
+          alt="Sha background"
           onLoad={onLoad}
           className={`duration-600 hidden h-full w-full object-cover transition-all md:inline-block  ${
             state[props.page] ? "" : "opacity-0"
@@ -37,8 +36,7 @@ const HeroSection = (props) => {
           src={props.bg}
         ></Image>
         <Image
-          priority
-          alt="Tech background"
+          alt="Sha background"
           onLoad={onLoad}
           className={`duration-600 h-full w-full object-cover transition-all md:hidden  ${
             state[props.page] ? "" : "opacity-0"
@@ -48,7 +46,6 @@ const HeroSection = (props) => {
       </div>
       <div className="absolute left-0 top-0 -z-10 h-full w-full">
         <Image
-          priority
           alt="Blurry background"
           className={`duration-600 h-full w-full object-cover transition-all ${
             state[props.page] ? "opacity-0" : ""
