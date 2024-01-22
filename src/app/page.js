@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       {" "}
-      <div className="hero-wrapper flex h-max flex-col gap-1 md:h-screen">
+      <div className="relative flex h-max flex-col gap-1 md:h-screen max-w-screen">
         <Navbar></Navbar>
         <MainHero page="home" onClick={handleClick}></MainHero>
       </div>

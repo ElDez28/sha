@@ -38,7 +38,7 @@ const Navbar = () => {
           bg === "white"
             ? "bg-[#f7f7f7] shadow-lg transition-shadow  "
             : "bg-transparent"
-        } fixed z-30 w-full transition-colors duration-300 `}
+        } fixed z-20 w-full transition-colors duration-300 `}
       >
         <div className="mx-auto flex max-w-[90rem] items-center justify-between px-4 pb-1 pt-2 font-bold lg:px-8 ">
           <Link href="/" className={`-translate-y-1`}>
@@ -87,7 +87,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-      <div ref={ref} className="absolute top-0 w-screen bg-red-400">
+      <div ref={ref} className="absolute top-0 w-screen">
         <div className="h-[30vh] w-full "></div>
       </div>
     </>

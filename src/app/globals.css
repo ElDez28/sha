@@ -22,6 +22,12 @@ body {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  z-index: 999;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #92a4ba;
+}
 .header::before {
   content: "━ ";
   color: #c9ada7;
