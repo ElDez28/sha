@@ -29,16 +29,13 @@ const Links = () => {
             <ul className="">
               <li className="flex items-center gap-2 py-2 transition-all duration-300 hover:text-primary">
                 <HiHome className=""></HiHome>
-                <Link className={` ${linksFs}`} href={url}>
+                <Link className={` ${linksFs}`} href={"/"}>
                   {"Home"}
                 </Link>
               </li>
               <li className="flex items-center gap-2 py-2 transition-all duration-300 hover:text-primary">
                 <MdPrivacyTip></MdPrivacyTip>
-                <Link
-                  className={`${linksFs}`}
-                  href={`${url}/privacy_and_policy`}
-                >
+                <Link className={`${linksFs}`} href={`/privacy_and_policy`}>
                   {"Privacy&Policy"}
                 </Link>
               </li>
@@ -46,14 +43,14 @@ const Links = () => {
                 <GiStabbedNote></GiStabbedNote>
                 <Link
                   className={`text-sm  ${linksFs}`}
-                  href={`${url}/terms_and_conditions`}
+                  href={`/terms_and_conditions`}
                 >
                   {"Terms&Conditions"}
                 </Link>
               </li>
               <li className="flex items-center gap-2 py-2  transition-all duration-300 hover:text-primary">
                 <GiInjustice></GiInjustice>
-                <Link className={`${linksFs}`} href={`${url}/legal_notice`}>
+                <Link className={`${linksFs}`} href={`/legal_notice`}>
                   {"Legal Notice"}
                 </Link>
               </li>
@@ -63,7 +60,7 @@ const Links = () => {
             className={`flex w-full flex-1 flex-col  gap-2 text-left text-gray-200 ${linksFs}`}
           >
             <div className="flex flex-col gap-2">
-              <h2 className={`   pb-2 text-left ${miniTitleFs}`}>
+              <h2 className={`pb-2 text-left ${miniTitleFs}`}>
                 {"Contact Us"}
               </h2>
 

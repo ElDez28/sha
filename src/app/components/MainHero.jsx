@@ -105,7 +105,7 @@ const variantsFour = {
 
 const SlideItem = ({ image, alt }) => {
   return (
-    <div className="h-full">
+    <div className="h-full w-full">
       <Image
         objectFit="cover"
         src={image}

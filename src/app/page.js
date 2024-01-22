@@ -1,8 +1,7 @@
 "use client";
 
 import MainHero from "./components/MainHero";
-import { useRef, useEffect } from "react";
-import Navbar from "./components/Navbar";
+import { useRef } from "react";
 import Transformation from "./components/Transformation";
 import Difference from "./components/Difference";
 import Achtung from "./components/Achtung";
@@ -10,6 +9,8 @@ import ContactUs from "./components/ContactUs";
 import Links from "./components/Links";
 import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
+import { Provider } from "react-redux";
+import store from "@/store/store";
 
 export default function Home() {
   const sectionRef = useRef();
@@ -19,10 +20,9 @@ export default function Home() {
   };
 
   return (
-    <>
+    <Provider store={store}>
       {" "}
-      <div className="relative flex h-max flex-col gap-1 md:h-screen max-w-screen">
-        <Navbar></Navbar>
+      <div className="flex h-max flex-col gap-1 md:h-screen">
         <MainHero page="home" onClick={handleClick}></MainHero>
       </div>
       <Transformation ref={sectionRef}></Transformation>
@@ -43,6 +43,6 @@ export default function Home() {
         headerTitle="Kundensupport"
         btnTxt="Chat starten"
       />
-    </>
+    </Provider>
   );
 }

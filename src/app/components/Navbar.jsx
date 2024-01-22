@@ -87,7 +87,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-      <div ref={ref} className="absolute top-0 w-screen">
+      <div ref={ref} className="absolute top-0 w-0 h-2 bg-green-400">
         <div className="h-[30vh] w-full "></div>
       </div>
     </>

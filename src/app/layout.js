@@ -1,6 +1,7 @@
-import { Providers } from "./providers";
 import { Raleway } from "next/font/google";
+import Navbar from "./components/Navbar";
 import "./globals.css";
+import Head from "next/head";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -14,10 +15,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <Providers>
-      <html lang="en">
-        <body className={`${raleway.variable} font-ral`}>{children}</body>
-      </html>
-    </Providers>
+    <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <body className={`${raleway.variable} font-ral relative`}>
+        <main className="max-w-screen">
+          <Navbar></Navbar>
+          {children}
+        </main>
+      </body>
+    </html>
   );
 }
