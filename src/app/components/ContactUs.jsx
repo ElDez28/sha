@@ -28,7 +28,7 @@ const variants = {
   },
 };
 
-const ContactUs = ({ con }) => {
+const ContactUs = () => {
   return (
     <section
       id="contact_us"
@@ -52,7 +52,7 @@ const ContactUs = ({ con }) => {
           <div className="flex flex-col flex-1 items-center text-center">
             <FaPhoneAlt className="text-6xl text-primary mb-6"></FaPhoneAlt>
             <h4 className="text-xl font-bold text-gray-500 mb-12">
-              Talk to SHA
+              Sprechen mit SHA
             </h4>
             <p className="mb-8">
               Interessiert an Sha-Mentaltherapie. Greifen Sie einfach zum

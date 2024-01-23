@@ -4,16 +4,15 @@ import { linksFs, miniTitleFs } from "../lib/fontSizes";
 import { HiHome } from "react-icons/hi";
 import { MdPrivacyTip } from "react-icons/md";
 import { GiInjustice } from "react-icons/gi";
-import { GiStabbedNote } from "react-icons/gi";
 import logo from "/public/logo.png";
 
 const Links = () => {
   return (
-    <section className="h-auto bg-dark pt-16 ">
+    <section className="h-auto bg-dark pt-16">
       <div className="] mx-auto max-w-[90rem]  px-4 pb-16 text-left md:text-center lg:px-8">
         <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-2 lg:grid-cols-4 ">
           <div className="text-md flex flex-col gap-2 text-left text-gray-200 lg:col-span-2">
-            <div>
+            <div className="mx-auto md:mx-0">
               <Image
                 className="w-[16rem] h-[16rem]"
                 src={logo}

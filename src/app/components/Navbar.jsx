@@ -32,13 +32,12 @@ const Navbar = () => {
   return (
     <>
       <DynamicModal isOpen={isOpen} handleClose={closeModal}></DynamicModal>
-
       <nav
         className={`${
           bg === "white"
             ? "bg-[#f7f7f7] shadow-lg transition-shadow  "
             : "bg-transparent"
-        } fixed z-20 w-full transition-colors duration-300 `}
+        } fixed z-30 w-full transition-colors duration-300`}
       >
         <div className="mx-auto flex max-w-[90rem] items-center justify-between px-4 pb-1 pt-2 font-bold lg:px-8 ">
           <Link href="/" className={`-translate-y-1`}>
@@ -70,7 +69,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="flex items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 py-2 font-semibold  text-white">
-              <Link href={`#contact_us`}> {"Contact Us"}</Link>
+              <Link href={`#contact_us`}> {"Kontaktiere uns"}</Link>
             </div>
           </div>
           {!isOpen && (
@@ -87,8 +86,8 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-      <div ref={ref} className="absolute top-0 w-0 h-2 bg-green-400">
-        <div className="h-[30vh] w-full "></div>
+      <div ref={ref} className=" absolute">
+        <div className="h-2 w-full "></div>
       </div>
     </>
   );

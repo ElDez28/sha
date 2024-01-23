@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { RiMentalHealthLine } from "react-icons/ri";
-import { BsGraphUpArrow } from "react-icons/bs";
-import { BsFillPersonBadgeFill } from "react-icons/bs";
 import { forwardRef } from "react";
 import { subheadingFs } from "../lib/fontSizes";
 import TransformationCard from "./TransformationCard";
 import Header from "./Header";
 import flowers from "/public/flowers.webp";
+import { slideFromLeft, slideFromRight } from "../animations/animations";
 
 const Transformation = (props, ref) => {
   return (
@@ -33,13 +33,19 @@ const Transformation = (props, ref) => {
               "u.v.m.",
             ]}
           ></TransformationCard>
-          <div className="max-h-[48rem]">
+          <motion.div
+            variants={slideFromRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="max-h-[48rem]"
+          >
             <Image
               src={flowers}
               alt="flowers and candles"
               className="object-cover w-full h-full"
             ></Image>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

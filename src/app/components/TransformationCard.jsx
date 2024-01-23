@@ -1,8 +1,16 @@
 import { paragraphFontSize, titleFontSize } from "../lib/fontSizes";
+import { motion } from "framer-motion";
+import { slideFromLeft } from "../animations/animations";
 
 const TransformationCard = (props) => {
   return (
-    <div className="group relative flex flex-col justify-between overflow-hidden rounded-xl px-12 py-12 shadow-lg ">
+    <motion.div
+      variants={slideFromLeft}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="group relative flex flex-col justify-between overflow-hidden rounded-xl px-12 py-12 shadow-lg "
+    >
       <div className="absolute right-0 top-0 -z-10 h-0 w-0 bg-primary opacity-0 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:opacity-100"></div>
       <div className="mb-12 text-4xl text-primary transition-colors duration-700 group-hover:text-white 2xl:text-6xl ">
         {props.icon}
@@ -22,7 +30,7 @@ const TransformationCard = (props) => {
           })}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

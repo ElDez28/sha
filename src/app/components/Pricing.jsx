@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Wrapper from "./Wrapper";
+import { motion } from "framer-motion";
 import { LuEuro } from "react-icons/lu";
 import Header from "./Header";
 import doctor from "/public/doctor.png";
 import weight from "/public/lose-weight.png";
+import { sectionsAnimationsVariants } from "../animations/animations";
 
 const Card = ({ title, price, icon, alt, full = true }) => {
   return (
@@ -39,22 +41,29 @@ const Card = ({ title, price, icon, alt, full = true }) => {
 
 const Pricing = () => {
   return (
-    <Wrapper>
-      <Header title={"PREISLISTE"}></Header>
-      <div className="grid grid-cols-1 md:grid-cols-2 content-center gap-16 mt-20">
-        <Card
-          icon={doctor}
-          full={false}
-          title="Gesprächs&shy;hypnose mit Thema nach Wahl"
-          price="99"
-        ></Card>
-        <Card title="Magenband Behandlung" price="299" icon={weight}></Card>
-      </div>
-      <p className="mt-12 font-bold text-gray-600">
-        Bitte scheue Dich nicht nach Kennenlernangeboten oder Sonderpreise für
-        Schüler, Azubis, Studenten oder bei geringem Einkommen zu erfragen!
-      </p>
-    </Wrapper>
+    <motion.div
+      variants={sectionsAnimationsVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      <Wrapper>
+        <Header title={"PREISLISTE"}></Header>
+        <div className="grid grid-cols-1 md:grid-cols-2 content-center gap-16 mt-20">
+          <Card
+            icon={doctor}
+            full={false}
+            title="Gesprächs&shy;hypnose mit Thema nach Wahl"
+            price="99"
+          ></Card>
+          <Card title="Magenband Behandlung" price="299" icon={weight}></Card>
+        </div>
+        <p className="mt-12 font-bold text-gray-600">
+          Bitte scheue Dich nicht nach Kennenlernangeboten oder Sonderpreise für
+          Schüler, Azubis, Studenten oder bei geringem Einkommen zu erfragen!
+        </p>
+      </Wrapper>
+    </motion.div>
   );
 };
 

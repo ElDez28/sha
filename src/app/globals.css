@@ -17,14 +17,9 @@ body {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
-  box-sizing: border-box;
-  overflow-y: auto;
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #92a4ba;
-}
 .header::before {
   content: "━ ";
   color: #c9ada7;

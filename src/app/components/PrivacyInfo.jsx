@@ -117,6 +117,7 @@ const PrivacyInfo = () => {
             "E-Mail: shahda@hotmail.de",
             "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.",
           ]}
+          margin={false}
         ></InfoItem>
         <InfoItem
           title={"Widerruf Ihrer Einwilligung zur Datenverarbeitung"}
@@ -183,6 +184,14 @@ const PrivacyInfo = () => {
           title={"Server-Log-Dateien"}
           paragraphs={[
             "Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:",
+            <ul>
+              <li>• Browsertyp und Browserversion</li>
+              <li>• verwendetes Betriebssystem</li>
+              <li>• Referrer URL</li>
+              <li>• Hostname des zugreifenden Rechners</li>
+              <li>• Uhrzeit der Serveranfrage</li>
+              <li>• IP-Adresse</li>
+            </ul>,
             "Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.",
             "Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.",
           ]}

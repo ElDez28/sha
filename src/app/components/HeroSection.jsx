@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -22,13 +20,13 @@ const HeroSection = (props) => {
 
   return (
     <section
-      className={`relative flex-1 min-h-[60vh]  flex items-center justify-center ${
+      className={`relative flex-1 min-h-[60vh] flex items-center justify-center ${
         props.main ? "" : "md:max-h-[60vh]"
       }`}
     >
       <div className="absolute left-0 top-0 -z-30 h-full w-full flex items-center justify-center">
         <Image
-          alt="Sha background"
+          alt="sha background"
           onLoad={onLoad}
           className={`duration-600 hidden h-full w-full object-cover transition-all md:inline-block  ${
             state[props.page] ? "" : "opacity-0"
@@ -36,7 +34,7 @@ const HeroSection = (props) => {
           src={props.bg}
         ></Image>
         <Image
-          alt="Sha background"
+          alt="sha background"
           onLoad={onLoad}
           className={`duration-600 h-full w-full object-cover transition-all md:hidden  ${
             state[props.page] ? "" : "opacity-0"
