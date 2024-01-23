@@ -8,7 +8,6 @@ import { GiStabbedNote } from "react-icons/gi";
 import logo from "/public/logo.png";
 
 const Links = () => {
-  const url = `${process.env.NEXT_PUBLIC_SITE_URL}/`;
   return (
     <section className="h-auto bg-dark pt-16 ">
       <div className="] mx-auto max-w-[90rem]  px-4 pb-16 text-left md:text-center lg:px-8">
@@ -24,34 +23,25 @@ const Links = () => {
           </div>
           <div className="flex w-full flex-1 flex-col gap-2 text-gray-200">
             <h2 className={` pb-2 ${miniTitleFs}  text-left`}>
-              {"Useful links"}
+              {"Nützliche Links"}
             </h2>
             <ul className="">
               <li className="flex items-center gap-2 py-2 transition-all duration-300 hover:text-primary">
                 <HiHome className=""></HiHome>
                 <Link className={` ${linksFs}`} href={"/"}>
-                  {"Home"}
+                  {"Startseite"}
                 </Link>
               </li>
               <li className="flex items-center gap-2 py-2 transition-all duration-300 hover:text-primary">
                 <MdPrivacyTip></MdPrivacyTip>
                 <Link className={`${linksFs}`} href={`/privacy_and_policy`}>
-                  {"Privacy&Policy"}
-                </Link>
-              </li>
-              <li className="flex items-center gap-2 py-2 text-gray-50 transition-all duration-300 hover:text-primary">
-                <GiStabbedNote></GiStabbedNote>
-                <Link
-                  className={`text-sm  ${linksFs}`}
-                  href={`/terms_and_conditions`}
-                >
-                  {"Terms&Conditions"}
+                  {"Datenschutz & Richtlinien"}
                 </Link>
               </li>
               <li className="flex items-center gap-2 py-2  transition-all duration-300 hover:text-primary">
                 <GiInjustice></GiInjustice>
                 <Link className={`${linksFs}`} href={`/legal_notice`}>
-                  {"Legal Notice"}
+                  {"Impressum"}
                 </Link>
               </li>
             </ul>
@@ -61,7 +51,7 @@ const Links = () => {
           >
             <div className="flex flex-col gap-2">
               <h2 className={`pb-2 text-left ${miniTitleFs}`}>
-                {"Contact Us"}
+                {"Kontaktiere uns"}
               </h2>
 
               <p>

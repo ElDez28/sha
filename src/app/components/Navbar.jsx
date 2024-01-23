@@ -56,17 +56,17 @@ const Navbar = () => {
           >
             <div className="group relative flex items-center justify-center gap-1 whitespace-nowrap">
               <Link className="z-20" href={`/`}>
-                {"Home"}
+                {"Startseite"}
               </Link>
             </div>
             <div className="group relative flex items-center justify-center gap-1 whitespace-nowrap">
               <Link className="z-20" href={`/legal_notice`}>
-                {"Legal"}
+                {"Impressum"}
               </Link>
             </div>
             <div className="group relative flex items-center justify-center gap-1 ">
               <Link className="z-20" href={`/privacy_and_policy`}>
-                {"Privacy Policy"}
+                {"Datenschutz & Richtlinien"}
               </Link>
             </div>
             <div className="flex items-center justify-center whitespace-nowrap rounded-full bg-primary px-6 py-2 font-semibold  text-white">

@@ -11,6 +11,7 @@ import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
 import { Provider } from "react-redux";
 import store from "@/store/store";
+import Pricing from "./components/Pricing";
 
 export default function Home() {
   const sectionRef = useRef();
@@ -28,6 +29,7 @@ export default function Home() {
       <Transformation ref={sectionRef}></Transformation>
       <Difference></Difference>
       <Achtung></Achtung>
+      <Pricing></Pricing>
       <ContactUs></ContactUs>
       <Links></Links>
       <WhatsAppWidget

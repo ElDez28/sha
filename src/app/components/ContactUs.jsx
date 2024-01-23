@@ -41,9 +41,9 @@ const ContactUs = ({ con }) => {
         viewport={{ once: true }}
         className=" z-10 mx-auto max-w-[90rem] px-4 text-center lg:px-8"
       >
-        <Header title={con ? "Send Email" : "Contact Us"}></Header>
+        <Header title={"Kontaktiere uns"}></Header>
         <p className="mb-12 font-bold italic  text-gray-500">
-          {con ? "" : "Contact SHA"}
+          {"Kontaktiere SHA"}
         </p>
         <div className="flex flex-col items-center gap-8 lg:flex-row">
           <div className="relative flex-1">
