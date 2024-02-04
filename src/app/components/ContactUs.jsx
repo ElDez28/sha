@@ -47,7 +47,7 @@ const ContactUs = () => {
         </p>
         <div className="flex flex-col items-center gap-8 lg:flex-row">
           <div className="relative flex-1">
-            <Image src={contact}></Image>
+            <Image src={contact} alt="contact-illustration"></Image>
           </div>
           <div className="flex flex-col flex-1 items-center text-center">
             <FaPhoneAlt className="text-6xl text-primary mb-6"></FaPhoneAlt>
@@ -55,8 +55,8 @@ const ContactUs = () => {
               Sprechen mit SHA
             </h4>
             <p className="mb-8">
-              Interessiert an Sha-Mentaltherapie. Greifen Sie einfach zum
-              Telefon, um mit einem Mitglied unseres Teams zu sprechen.
+              Für mehr Informationen kontaktieren Sie mich <br></br> über
+              Telefon, WhatsApp oder Telegram
             </p>
             <span className="text-primary font-bold text-2xl mb-8">
               0176- 766 49 854{" "}

@@ -1,3 +1,4 @@
+"use client";
 import { BiCheckDouble } from "react-icons/bi";
 import { motion } from "framer-motion";
 
@@ -22,21 +23,25 @@ export const variants = {
   },
 };
 
-export const InfoItem = ({ title, paragraphs, margin = true }) => {
+export const InfoItem = ({ title, paragraphs, margin = true, icon = true }) => {
   return (
     <div>
       <div className="flex items-center justify-start gap-1 mb-4">
-        <BiCheckDouble color="#3498db" fontSize="26px"></BiCheckDouble>
+        {icon && (
+          <BiCheckDouble color="#3498db" fontSize="26px"></BiCheckDouble>
+        )}
         <h3 className="text-md font-bold text-gray-600">{title}</h3>
       </div>
       <div className=" text-gray-600 ">
-        {paragraphs?.map((item, i) => {
-          return (
-            <p key={i} className={`${margin ? "mb-4" : "mb-0"}`}>
-              {item}
-            </p>
-          );
-        })}
+        <ul>
+          {paragraphs?.map((item, i) => {
+            return (
+              <li key={i} className={`${margin ? "mb-4" : "mb-0"}`}>
+                {item}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );
@@ -51,7 +56,21 @@ const LegalInfo = () => {
         viewport={{ once: true }}
         className="mx-auto flex max-w-[90rem] flex-col gap-4 px-4 py-8  text-left font-medium lg:px-8   "
       >
-        <p className="text-gray-600 ">{""}</p>
+        <InfoItem
+          paragraphs={[
+            "SHA Mentalcoaching & mehr",
+            "Shahda Kaikati",
+            "Tempelhofer Damm 36",
+            "12101 Berlin",
+          ]}
+          icon={false}
+          margin={false}
+        ></InfoItem>
+        <InfoItem
+          title={"Kontakt"}
+          paragraphs={["Tel. 0176 766 49 854", "E- Mail: shahda@hotmail.de"]}
+          margin={false}
+        ></InfoItem>
         <InfoItem
           title={"Aufsichtsbehörde"}
           paragraphs={[
@@ -85,16 +104,14 @@ const LegalInfo = () => {
             "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.",
           ]}
         ></InfoItem>
-        <p>
-          Bildrechte und Quellen:{" "}
-          <a
-            className="text-gray-600"
-            href="https://pixabay.com/de/"
-            target="_blank"
-          >
-            https://pixabay.com/de/
-          </a>
-        </p>
+        Bildrechte und Quellen:{" "}
+        <a
+          className="text-gray-600"
+          href="https://pixabay.com/de/"
+          target="_blank"
+        >
+          https://pixabay.com/de/
+        </a>
       </motion.div>
     </section>
   );

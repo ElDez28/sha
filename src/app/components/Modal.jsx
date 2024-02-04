@@ -22,7 +22,6 @@ const Item = ({ title, close, link, router }) => {
 };
 
 const BasicModal = ({ isOpen, handleClose }) => {
-  const url = `${process.env.NEXT_PUBLIC_SITE_URL}`;
   const router = useRouter();
 
   return (
@@ -43,32 +42,20 @@ const BasicModal = ({ isOpen, handleClose }) => {
         <Item
           close={handleClose}
           router={router}
-          link={url}
-          title={"Home"}
+          link={"/"}
+          title={"Startseite"}
         ></Item>
         <Item
           close={handleClose}
           router={router}
-          link={`${url}/about`}
-          title={"About Us"}
+          link={`/impressum`}
+          title={"Impressum"}
         ></Item>
         <Item
           close={handleClose}
           router={router}
-          link={`${url}/services`}
-          title={"Services"}
-        ></Item>
-        <Item
-          close={handleClose}
-          router={router}
-          link={`${url}/careers`}
-          title={"Careers"}
-        ></Item>
-        <Item
-          close={handleClose}
-          router={router}
-          link={`${url}/contact_us`}
-          title={"Contact Us"}
+          link={`/datenschutz_und_richtlinien`}
+          title={"Datenschutz & richtlinien"}
         ></Item>
       </div>
     </ConfirmationModal>

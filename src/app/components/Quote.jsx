@@ -19,10 +19,9 @@ const Quote = () => {
           </div>
           <GradientContainer bg={"bg-[#f7f7f7]"}>
             <p className="max-w-[60rem] md:text-6xl mb-12 mt-4 text-2xl mx-auto">
-              Alle Träume können wahr werden, wenn wir den Mut. haben, ihnen zu
-              folgen.
+              Die Reise von tausend Meilen beginnt mit einem einzigen Schritt.
             </p>
-            <p className="italic">Walt Disney</p>
+            <p className="italic">- chinesisches Sprichwort</p>
           </GradientContainer>
         </div>
       </Wrapper>

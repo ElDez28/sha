@@ -59,12 +59,12 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="group relative flex items-center justify-center gap-1 whitespace-nowrap">
-              <Link className="z-20" href={`/legal_notice`}>
+              <Link className="z-20" href={`/impressum`}>
                 {"Impressum"}
               </Link>
             </div>
             <div className="group relative flex items-center justify-center gap-1 ">
-              <Link className="z-20" href={`/privacy_and_policy`}>
+              <Link className="z-20" href={`/datenschutz_und_richtlinien`}>
                 {"Datenschutz & Richtlinien"}
               </Link>
             </div>

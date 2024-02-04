@@ -107,7 +107,6 @@ const SlideItem = ({ image, alt }) => {
   return (
     <div className="h-full w-full">
       <Image
-        objectFit="cover"
         src={image}
         alt={alt}
         className="object-cover max-h-full max-w-full min-h-[100vh] min-w-[100vw]"
@@ -171,7 +170,7 @@ const MainHero = (props) => {
             >
               <h1 className="leading-snug">
                 HERZLICH WILL&shy;KOMMEN BEI <br />
-                SHA MENTAL&shy;THERAPIE & MEHR
+                SHA MENTAL&shy;COACHING & MEHR
               </h1>
             </motion.div>
             <motion.h2

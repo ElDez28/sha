@@ -13,7 +13,7 @@ const Transformation = (props, ref) => {
   return (
     <section ref={ref} className="relative border-b-2 py-24">
       <div className="z-10 mx-auto mt-12 max-w-[90rem] text-center">
-        <Header title="DEINE TRANSFORMATION DURCH MENTAL&shy;THERAPIE"></Header>
+        <Header title="DEINE TRANSFORMATION DURCH HYPNOSE"></Header>
         <p className={`${subheadingFs}`}></p>
         <div className="grid max-h-max grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:px-8 xl:grid-cols-2 ">
           <TransformationCard
@@ -21,7 +21,7 @@ const Transformation = (props, ref) => {
             icon={<RiMentalHealthLine></RiMentalHealthLine>}
             text={"Ich biete Mental­therapie für folgende Gebiete:"}
             title={
-              "Tauche ein in die Welt des multisensorischen Mentaltrainings und entdecke verborgene Ressourcen aus deinem Unterbewusstsein."
+              "Tauche ein in die Welt der multisensorischen Hypnose und entdecke verborgene Ressourcen aus deinem Unterbewusstsein."
             }
             services={[
               "Mentales Magenband bei emotionalem Essen",

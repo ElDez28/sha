@@ -4,7 +4,7 @@ import { linksFs, miniTitleFs } from "../lib/fontSizes";
 import { HiHome } from "react-icons/hi";
 import { MdPrivacyTip } from "react-icons/md";
 import { GiInjustice } from "react-icons/gi";
-import logo from "/public/logo.png";
+import logo from "/public/logo.webp";
 
 const Links = () => {
   return (
@@ -33,13 +33,16 @@ const Links = () => {
               </li>
               <li className="flex items-center gap-2 py-2 transition-all duration-300 hover:text-primary">
                 <MdPrivacyTip></MdPrivacyTip>
-                <Link className={`${linksFs}`} href={`/privacy_and_policy`}>
+                <Link
+                  className={`${linksFs}`}
+                  href={`/datenschutz_und_richtlinien`}
+                >
                   {"Datenschutz & Richtlinien"}
                 </Link>
               </li>
               <li className="flex items-center gap-2 py-2  transition-all duration-300 hover:text-primary">
                 <GiInjustice></GiInjustice>
-                <Link className={`${linksFs}`} href={`/legal_notice`}>
+                <Link className={`${linksFs}`} href={`/impressum`}>
                   {"Impressum"}
                 </Link>
               </li>

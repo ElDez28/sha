@@ -1,3 +1,4 @@
+"use client";
 import { InfoItem } from "./LegalInfo";
 import { motion } from "framer-motion";
 

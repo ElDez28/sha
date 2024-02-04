@@ -14,7 +14,7 @@ const raleway = Raleway({
 
 export const metadata = {
   title: "Sha website",
-  description: "A menthal therapie site",
+  description: "A mental couching site",
 };
 
 export default function RootLayout({ children }) {
