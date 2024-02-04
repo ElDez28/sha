@@ -40,8 +40,7 @@ const Difference = () => {
             emotionale Verletzungen und negative Glaubenssätze abzubauen.
           </span>
           <span>
-            Meine Arbeit zeichnet sich durch multisensorische Elemente aus. Die
-            Eine Gesprächshypnose zeichnet sich dadurch aus, dass wir mit dem
+            Gesprächshypnose zeichnet sich dadurch aus, dass wir mit dem
             leistungsstarken Unterbewusstsein - schnell eine nachhaltige Lösung
             zu Ihrem Problem finden. Dies geschieht durch gezielte Kommunikation
             mittels besonderer Werkzeuge und Sprachmuster. Tiefste Wünsche und
